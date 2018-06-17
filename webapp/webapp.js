@@ -6,6 +6,7 @@ angular.module('myApp', [
     $routeProvider.when('/', {
 
         templateUrl: 'dangnhap.html',
+	templateUrl: 'home.html',    
         controller: 'Home'
     });
 }).factory('mySocket', function (socketFactory) {
