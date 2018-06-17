@@ -6,14 +6,9 @@ angular.module('myApp', [
     $routeProvider.when('/', {
 
         templateUrl: 'dangnhap.html',
-        controller: 'dangnhap'
-    });
-.config(function($routeProvider) {
-    $routeProvider.when('/gidien', {
-
-        templateUrl: 'home.html',
         controller: 'Home'
     });
+
 		
 	
 }).factory('mySocket', function (socketFactory) {
