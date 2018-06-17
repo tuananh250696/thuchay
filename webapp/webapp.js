@@ -5,11 +5,11 @@ angular.module('myApp', [
 ]).config(function($routeProvider) {
     $routeProvider.when('/', {
 
-        templateUrl: 'gidien/dangnhap.html',
+        templateUrl: 'dangnhap.html',
         controller: 'dangnhap'
     });
 .config(function($routeProvider) {
-    $routeProvider.when('/', {
+    $routeProvider.when('/gidien', {
 
         templateUrl: 'home.html',
         controller: 'Home'
