@@ -26,8 +26,7 @@ angular.module('myApp', [
 	
 /////////////////////// Những dòng code ở trên phần này là phần cài đặt, các bạn hãy đọc thêm về angularjs để hiểu, cái này không nhảy cóc được nha!
 })
-	.controller('dangnhap', function($scope, mySocket)
-		    {
+	
 	.controller('Home', function($scope, mySocket) {
 	////Khu 1 -- Khu cài đặt tham số 
     //cài đặt một số tham số test chơi
