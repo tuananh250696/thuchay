@@ -5,17 +5,9 @@ angular.module('myApp', [
 ]).config(function($routeProvider) {
     $routeProvider.when('/', {
 
-        templateUrl: 'gidien/dangnhap.html',
-        controller: 'dangnhap'
-    });
-.config(function($routeProvider) {
-    $routeProvider.when('/', {
-
         templateUrl: 'home.html',
         controller: 'Home'
     });
-		
-	
 }).factory('mySocket', function (socketFactory) {
 	var myIoSocket = io.connect('/webapp');	//Tên namespace webapp
 
@@ -25,10 +17,7 @@ angular.module('myApp', [
 	return mySocket;
 	
 /////////////////////// Những dòng code ở trên phần này là phần cài đặt, các bạn hãy đọc thêm về angularjs để hiểu, cái này không nhảy cóc được nha!
-})
-	.controller('dangnhap', function($scope, mySocket)
-		    {
-	.controller('Home', function($scope, mySocket) {
+}).controller('Home', function($scope, mySocket) {
 	////Khu 1 -- Khu cài đặt tham số 
     //cài đặt một số tham số test chơi
 	//dùng để đặt các giá trị mặc định
@@ -72,7 +61,7 @@ angular.module('myApp', [
 		var ip = document.getElementById('ip').value;
 		mySocket.emit("LED4OFF"+ip)
 	}
-	}	
+	
 	
 		
 });
