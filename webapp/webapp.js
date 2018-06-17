@@ -8,6 +8,8 @@ angular.module('myApp', [
         templateUrl: 'home.html',
         controller: 'Home'
     });
+	
+	
 }).factory('mySocket', function (socketFactory) {
 	var myIoSocket = io.connect('/webapp');	//Tên namespace webapp
 
