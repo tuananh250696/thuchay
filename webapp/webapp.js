@@ -6,9 +6,15 @@ angular.module('myApp', [
     $routeProvider.when('/', {
 
         templateUrl: 'gidien/dangnhap.html',
+        controller: 'dangnhap'
+    });
+.config(function($routeProvider) {
+    $routeProvider.when('/', {
+
+        templateUrl: 'home.html',
         controller: 'Home'
     });
-	
+		
 	
 }).factory('mySocket', function (socketFactory) {
 	var myIoSocket = io.connect('/webapp');	//Tên namespace webapp
