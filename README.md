@@ -1,3 +1,3 @@
 # Giới thiệu
 
-code by PDU tuananh && khacuong
+code by tuananh && khacuong
